@@ -177,3 +177,85 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+  .firstscreen h1 {
+    font-size: 32px;
+    margin: 60px 0 30px 20px;
+  }
+
+  .firstscreen p {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  .firstscreen__menu {
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 15px;
+  }
+
+  .firstscreen__button {
+    margin-left: 20px;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .projects .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .how-i-work iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .about-me__inner {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .about-me .description {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .firstscreen h1 {
+    font-size: 26px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .description,
+  .about-me .description {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .firstscreen__button {
+    height: 50px;
+    font-size: 14px;
+  }
+}
