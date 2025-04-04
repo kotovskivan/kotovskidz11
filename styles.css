@@ -15,50 +15,59 @@
 }
 
 body {
-  height: 100%;
-  background-color: #f9f9f9;
   font-family: var(--font-family-main);
+  background-color: #f9f9f9;
   display: flex;
   flex-direction: column;
 }
 
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .firstscreen {
-  width: auto;
   background-color: #eeeff1;
-  padding: 10px;
+  padding: 60px 0;
+}
+
+.firstscreen__content {
   font-size: var(--font-size-main);
-  width: min(100%-40px, 1110px);
 }
 
 .firstscreen h1 {
   font-size: 45px;
-  padding: 10px 0px 0px 0px;
   margin: 100px 0 60px 100px;
   font-weight: 500;
 }
 
 .firstscreen p {
-  font-size: var(--font-size-main);
-  padding: 10px 0px 0px 0px;
-  margin: 0 0 0 100px;
+  margin-left: 100px;
   font-weight: var(--text400);
   max-width: 540px;
 }
 
 .firstscreen__menu {
   display: flex;
-  justify-content: left;
   gap: 42px;
   text-transform: var(--caps);
   margin: 30px 0 0 100px;
+  list-style: none;
 }
 
 .firstscreen__menu li {
   letter-spacing: var(--letter-spacing-all);
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.firstscreen__menu .active {
+  font-weight: bold;
 }
 
 .firstscreen__button {
-  margin: 30px 0px 100px 100px;
+  margin: 30px 0 100px 100px;
   padding: 10px;
   font-weight: var(--text400);
   width: 225px;
@@ -68,27 +77,43 @@ body {
   color: var(--color-white);
   letter-spacing: var(--letter-spacing-all);
   border: none;
-  border-radius: 5px; /* Для красоты добавлен радиус */
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .firstscreen__button:hover {
-  background-color: #2b4a69; /* Цвет кнопки при наведении */
+  background-color: #2b4a69;
 }
 
-/* About Section */
 .container {
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 10px;
-  margin: 0;
   text-align: center;
   font-size: var(--font-size-main);
   height: 300px;
+}
+
+.about-me {
+  background-color: var(--color-white);
+}
+
+.about-me__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.about-me .description {
+  color: #555;
+  text-align: center;
+  max-width: 540px;
+  margin: 0 auto;
 }
 
 .title {
@@ -102,15 +127,17 @@ body {
   font-weight: var(--text400);
 }
 
-/* Projects Section */
 .projects {
   background-color: #365b80;
   padding: 30px 0;
+}
+
+.projects .wrapper {
   display: flex;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
-  height: 250px;
+  min-height: 250px;
 }
 
 .project-item {
@@ -126,41 +153,27 @@ body {
   height: auto;
 }
 
-.project-item p {
-  margin: 0;
-  line-height: 1.4;
-}
-
 .how-i-work {
-    background-color: #EEEFF1;
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Выровнять всё содержимое по центру */
-    text-align: center;
-}
-
-.how-i-work .title {
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 20px;
+  background-color: #eeeff1;
+  padding: 50px 20px;
+  text-align: center;
 }
 
 .how-i-work .description {
-    font-size: var(--font-size-main);
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 30px;
-    max-width: 540px; /* Ограничить ширину текста */
-    text-align: center; /* Центрирование текста */
+  font-size: var(--font-size-main);
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer {
-    background-color: #365b80;
-    color: white;
-    text-align: left;
-    padding: 20px;
-    font-size: 14px;
-    line-height: 1.5;
+  background-color: #365b80;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.5;
 }
-

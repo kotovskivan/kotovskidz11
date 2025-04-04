@@ -14,77 +14,97 @@
   <body>
     <header class="header">
       <div class="firstscreen">
-        <nav>
-          <ul class="firstscreen__menu">
-            <li>главная</li>
-            <li>об авторе</li>
-            <li>работы</li>
-            <li>процесс</li>
-            <li>контакты</li>
-          </ul>
-        </nav>
-        <h1>Дизайн и верстка</h1>
-        <p>
-          Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-          вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
-          латинице с начала XVI века.
-        </p>
-        <button class="firstscreen__button">НАПИСАТЬ МНЕ</button>
+        <div class="wrapper">
+          <div class="firstscreen__content">
+            <nav>
+              <ul class="firstscreen__menu">
+                <li class="active">главная</li>
+                <li>об авторе</li>
+                <li>работы</li>
+                <li>процесс</li>
+                <li>контакты</li>
+              </ul>
+            </nav>
+            <h1>Дизайн и верстка</h1>
+            <p>
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+              латинице с начала XVI века.
+            </p>
+            <button class="firstscreen__button">НАПИСАТЬ МНЕ</button>
+          </div>
+        </div>
       </div>
     </header>
+
     <main>
       <section class="about-me">
-        <div class="container">
-          <p class="title">Обо мне</p>
+        <div class="wrapper">
+          <div class="container about-me__inner">
+            <p class="title">Обо мне</p>
+            <p class="description">
+              Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+              вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
+              латинице с начала XVI века.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="wrapper">
+          <div class="project-item">
+            <img src="project.png" alt="Иконка проекта" />
+            <p>40+<br />проектов</p>
+          </div>
+          <div class="project-item">
+            <img src="project.png" alt="Иконка проекта" />
+            <p>40+<br />проектов</p>
+          </div>
+          <div class="project-item">
+            <img src="project.png" alt="Иконка проекта" />
+            <p>40+<br />проектов</p>
+          </div>
+          <div class="project-item">
+            <img src="project.png" alt="Иконка проекта" />
+            <p>40+<br />проектов</p>
+          </div>
+          <div class="project-item">
+            <img src="project.png" alt="Иконка проекта" />
+            <p>40+<br />проектов</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-i-work">
+        <div class="wrapper">
+          <p class="title">Как я работаю</p>
           <p class="description">
             Lorem Ipsum - это текст-"рыба", часто используемый в печати и
             вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
             латинице с начала XVI века.
           </p>
+          <p>
+            <iframe
+              width="800"
+              height="515"
+              src="https://www.youtube.com/embed/HD13eq_Pmp8?si=lyhOJ3MYl6MlpyMS"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </p>
         </div>
       </section>
-      <section class="projects">
-        <div class="project-item">
-          <img src="project.png" alt="Иконка проекта" />
-          <p>40+<br />проектов</p>
-        </div>
-        <div class="project-item">
-          <img src="project.png" alt="Иконка проекта" />
-          <p>40+<br />проектов</p>
-        </div>
-        <div class="project-item">
-          <img src="project.png" alt="Иконка проекта" />
-          <p>40+<br />проектов</p>
-        </div>
-        <div class="project-item">
-          <img src="project.png" alt="Иконка проекта" />
-          <p>40+<br />проектов</p>
-        </div>
-        <div class="project-item">
-          <img src="project.png" alt="Иконка проекта" />
-          <p>40+<br />проектов</p>
-        </div>
-      </section>
-
-      <section class="how-i-work">
-        <p class="title">Как я работаю</p>
-        <p class="description">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
-        </p>
-        <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HD13eq_Pmp8?si=lyhOJ3MYl6MlpyMS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </p>
-    </section>
-    
-    
-    
-    
-    
     </main>
+
     <footer class="footer">
+      <div class="wrapper">
         <p class="footer-name">Иванов Иван</p>
         <p class="footer-rights">© 2018. Все права защищены.</p>
+      </div>
     </footer>
-    
   </body>
 </html>
