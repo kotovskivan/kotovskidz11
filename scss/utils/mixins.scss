@@ -1,0 +1,11 @@
+@mixin center-flex($direction: column) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin transition($property: all, $duration: 0.3s, $type: ease) {
+    transition: $property $duration $type;
+  }
+  

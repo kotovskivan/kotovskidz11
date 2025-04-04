@@ -1,0 +1,13 @@
+@use 'utils/variables';
+@use 'utils/mixins';
+@use 'utils/media';
+
+@use 'base/reset';
+
+@use 'layout/header';
+@use 'layout/footer';
+
+@use 'layout/sections/firstscreen';
+@use 'layout/sections/about';
+@use 'layout/sections/projects';
+@use 'layout/sections/how-i-work';

@@ -1,0 +1,41 @@
+.how-i-work {
+    background-color: #eeeff1;
+    padding: 50px 20px;
+    text-align: center;
+  
+    .title {
+      font-size: 32px;
+      font-weight: 500;
+      margin-bottom: 20px;
+  
+      @include media-mobile {
+        font-size: 20px;
+      }
+    }
+  
+    .description {
+      font-size: $font-size-main;
+      line-height: 1.6;
+      color: #333;
+      margin-bottom: 30px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+  
+      @include media-mobile {
+        font-size: 13px;
+      }
+    }
+  
+    iframe {
+      width: 800px;
+      height: 515px;
+  
+      @include media-tablet {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
+    }
+  }
+  
